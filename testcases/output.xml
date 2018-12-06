@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181206 15:03:55.520">
+<suite id="s1" name="Test Login Page" source="C:\Automation\PhphTravels\testcases\Test_Login_Page.robot">
+<kw name="Open Login Page" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181206 15:03:56.650" level="INFO">Opening browser 'Chrome' to base url 'http://www.phptravels.net/login'.</msg>
+<status status="PASS" starttime="20181206 15:03:56.649" endtime="20181206 15:04:02.572"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20181206 15:04:02.573" endtime="20181206 15:04:02.573"></status>
+</kw>
+<status status="PASS" starttime="20181206 15:03:56.649" endtime="20181206 15:04:02.573"></status>
+</kw>
+<test id="s1-t1" name="Case1">
+<kw name="Enter Email And Password">
+<arguments>
+<arg>user@phptravels.com</arg>
+<arg>demouser</arg>
+</arguments>
+<kw name="Enter Email" library="resource">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20181206 15:04:02.576" level="INFO">Typing text 'user@phptravels.com' into text field 'username'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181206 15:04:02.927" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181206 15:04:02.606" endtime="20181206 15:04:02.927"></status>
+</kw>
+<msg timestamp="20181206 15:04:02.932" level="FAIL">Element with locator 'username' not found.</msg>
+<status status="FAIL" starttime="20181206 15:04:02.576" endtime="20181206 15:04:02.932"></status>
+</kw>
+<status status="FAIL" starttime="20181206 15:04:02.575" endtime="20181206 15:04:02.932"></status>
+</kw>
+<status status="FAIL" starttime="20181206 15:04:02.575" endtime="20181206 15:04:02.933"></status>
+</kw>
+<status status="FAIL" starttime="20181206 15:04:02.574" endtime="20181206 15:04:02.933" critical="yes">Element with locator 'username' not found.</status>
+</test>
+<status status="FAIL" starttime="20181206 15:03:55.532" endtime="20181206 15:04:02.934"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test Login Page">Test Login Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
