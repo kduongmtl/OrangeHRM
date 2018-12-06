@@ -28,11 +28,18 @@ Click Logout
     Wait Until Element Is Visible   //a[@href="/index.php/auth/logout"]
     Click Element  //a[@href="/index.php/auth/logout"]
 
-
 Open Login Page
     Open Browser    ${LOGIN URL}    ${BROWSER}
     Set Selenium Speed    ${DELAY}
 
+
+# User Management
+Open User Management Page
+    Open Browser    ${USER MANAGEMENT}    ${BROWSER}
+    Set Selenium Speed    ${DELAY}
+    Enter Username  Admin
+    Enter Password  admin123
+    Click Login
 
 
 
