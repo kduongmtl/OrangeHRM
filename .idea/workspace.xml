@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de329525-436b-417e-b332-3ee16b6421e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/testcases/Test_Admin_Page.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/resource.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resource.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/variables.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/variables.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/Test_Admin_Page.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/Test_Admin_Page.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.robot" pinned="false" current-in-tab="true">
+      <file leaf-file-name="resource.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/resource.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="512">
@@ -49,13 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Admin_Page.robot" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test_Admin_Page.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/Test_Admin_Page.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="144">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
-                <element signature="e#0#249#0" expanded="true" />
+                <element signature="e#0#238#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,14 +65,14 @@
       <list>
         <option value="$PROJECT_DIR$/testcases/Test_Login_Page.robot" />
         <option value="$PROJECT_DIR$/resources/variables.robot" />
-        <option value="$PROJECT_DIR$/testcases/Test_Admin_Page.robot" />
         <option value="$PROJECT_DIR$/resources/resource.robot" />
+        <option value="$PROJECT_DIR$/testcases/Test_Admin_Page.robot" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="455" />
-    <option name="y" value="54" />
+    <option name="x" value="561" />
+    <option name="y" value="101" />
     <option name="width" value="1594" />
     <option name="height" value="920" />
   </component>
@@ -149,7 +143,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="455" y="54" width="1594" height="920" extended-state="0" />
+    <frame x="561" y="101" width="1594" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
@@ -198,12 +192,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/Test_Admin_Page.robot">
+    <entry file="file://$PROJECT_DIR$/resources/resource.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="512">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
-            <element signature="e#0#249#0" expanded="true" />
+            <element signature="e#0#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -215,12 +209,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/resource.robot">
+    <entry file="file://$PROJECT_DIR$/testcases/Test_Admin_Page.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="144">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="e#0#361#0" expanded="true" />
+            <element signature="e#0#238#0" expanded="true" />
           </folding>
         </state>
       </provider>

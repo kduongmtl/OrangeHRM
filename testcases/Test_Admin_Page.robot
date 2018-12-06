@@ -7,7 +7,7 @@ Suite Setup  Open User Management Page
 #Test Template  Enter Email And Password
 
 **** Test Cases ***
-Validate User Management
+Add Candidate
     #Enter Username  Admin
 
 
