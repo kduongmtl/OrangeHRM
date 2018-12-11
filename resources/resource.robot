@@ -42,9 +42,18 @@ Open User Management Page
     Click Login
 
 
+Add User
+    Click Element  btnAdd
 
 
+Delete User
+    Click Element  btnDelete
 
+Search
+    Click Element  searchBtn
+
+Reset
+    Click Element  resetBtn
 
 
 

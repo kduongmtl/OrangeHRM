@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181206 16:42:27.110">
-<suite id="s1" name="Test Admin Page" source="C:\Automation\OrangeHRM\testcases\Test_Admin_Page.robot">
-<kw name="Open User Management Page" library="resource" type="setup">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181211 09:16:40.546">
+<suite id="s1" name="Test Login Page" source="C:\Automation\OrangeHRM\testcases\Test_Login_Page.robot">
+<kw name="Open Login Page" library="resource" type="setup">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${USER MANAGEMENT}</arg>
+<arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181206 16:42:27.571" level="INFO">Opening browser 'Chrome' to base url 'http://opensource-demo.orangehrmlive.com//index.php/admin/viewSystemUsers'.</msg>
-<status status="PASS" starttime="20181206 16:42:27.570" endtime="20181206 16:42:31.259"></status>
+<msg timestamp="20181211 09:16:42.441" level="INFO">Opening browser 'Chrome' to base url 'http://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" starttime="20181211 09:16:42.441" endtime="20181211 09:16:48.160"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20181206 16:42:31.259" endtime="20181206 16:42:31.260"></status>
+<status status="PASS" starttime="20181211 09:16:48.160" endtime="20181211 09:16:48.161"></status>
 </kw>
-<kw name="Enter Username" library="resource">
+<status status="PASS" starttime="20181211 09:16:42.440" endtime="20181211 09:16:48.161"></status>
+</kw>
+<test id="s1-t1" name="Case1">
+<kw name="Enter Email And Password">
 <arguments>
 <arg>Admin</arg>
+<arg>admin123</arg>
+</arguments>
+<kw name="Enter Username" library="resource">
+<arguments>
+<arg>${username}</arg>
 </arguments>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -28,14 +36,14 @@
 <arg>txtUsername</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20181206 16:42:31.261" level="INFO">Typing text 'Admin' into text field 'txtUsername'.</msg>
-<status status="PASS" starttime="20181206 16:42:31.261" endtime="20181206 16:42:31.404"></status>
+<msg timestamp="20181211 09:16:48.164" level="INFO">Typing text 'Admin' into text field 'txtUsername'.</msg>
+<status status="PASS" starttime="20181211 09:16:48.164" endtime="20181211 09:16:48.324"></status>
 </kw>
-<status status="PASS" starttime="20181206 16:42:31.260" endtime="20181206 16:42:31.404"></status>
+<status status="PASS" starttime="20181211 09:16:48.163" endtime="20181211 09:16:48.324"></status>
 </kw>
 <kw name="Enter Password" library="resource">
 <arguments>
-<arg>admin123</arg>
+<arg>${password}</arg>
 </arguments>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -43,10 +51,10 @@
 <arg>txtPassword</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20181206 16:42:31.405" level="INFO">Typing text 'admin123' into text field 'txtPassword'.</msg>
-<status status="PASS" starttime="20181206 16:42:31.405" endtime="20181206 16:42:31.533"></status>
+<msg timestamp="20181211 09:16:48.325" level="INFO">Typing text 'admin123' into text field 'txtPassword'.</msg>
+<status status="PASS" starttime="20181211 09:16:48.325" endtime="20181211 09:16:48.454"></status>
 </kw>
-<status status="PASS" starttime="20181206 16:42:31.404" endtime="20181206 16:42:31.533"></status>
+<status status="PASS" starttime="20181211 09:16:48.324" endtime="20181211 09:16:48.455"></status>
 </kw>
 <kw name="Click Login" library="resource">
 <kw name="Click Element" library="Selenium2Library">
@@ -54,27 +62,80 @@
 <arguments>
 <arg>btnLogin</arg>
 </arguments>
-<msg timestamp="20181206 16:42:31.534" level="INFO">Clicking element 'btnLogin'.</msg>
-<status status="PASS" starttime="20181206 16:42:31.534" endtime="20181206 16:42:32.878"></status>
+<msg timestamp="20181211 09:16:48.456" level="INFO">Clicking element 'btnLogin'.</msg>
+<status status="PASS" starttime="20181211 09:16:48.455" endtime="20181211 09:16:50.261"></status>
 </kw>
-<status status="PASS" starttime="20181206 16:42:31.533" endtime="20181206 16:42:32.878"></status>
+<status status="PASS" starttime="20181211 09:16:48.455" endtime="20181211 09:16:50.261"></status>
 </kw>
-<status status="PASS" starttime="20181206 16:42:27.569" endtime="20181206 16:42:32.878"></status>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>//img[@src="/webres_5acde3dbd3adc6.90334155/themes/default/images/logo.png"]</arg>
+</arguments>
+<msg timestamp="20181211 09:16:50.301" level="INFO">Current page contains image '//img[@src="/webres_5acde3dbd3adc6.90334155/themes/default/images/logo.png"]'.</msg>
+<status status="PASS" starttime="20181211 09:16:50.262" endtime="20181211 09:16:50.302"></status>
 </kw>
-<test id="s1-t1" name="Validate User Management">
-<status status="FAIL" starttime="20181206 16:42:32.878" endtime="20181206 16:42:32.880" critical="yes">Test case contains no keywords.</status>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//a[@id="welcome"]</arg>
+</arguments>
+<msg timestamp="20181211 09:16:50.325" level="INFO">Current page contains element '//a[@id="welcome"]'.</msg>
+<status status="PASS" starttime="20181211 09:16:50.302" endtime="20181211 09:16:50.325"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Dashboard</arg>
+</arguments>
+<msg timestamp="20181211 09:16:50.352" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20181211 09:16:50.325" endtime="20181211 09:16:50.352"></status>
+</kw>
+<kw name="Click Logout" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>welcome</arg>
+</arguments>
+<msg timestamp="20181211 09:16:50.353" level="INFO">Clicking element 'welcome'.</msg>
+<status status="PASS" starttime="20181211 09:16:50.353" endtime="20181211 09:16:50.466"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[@href="/index.php/auth/logout"]</arg>
+</arguments>
+<status status="PASS" starttime="20181211 09:16:50.467" endtime="20181211 09:16:50.736"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href="/index.php/auth/logout"]</arg>
+</arguments>
+<msg timestamp="20181211 09:16:50.737" level="INFO">Clicking element '//a[@href="/index.php/auth/logout"]'.</msg>
+<status status="PASS" starttime="20181211 09:16:50.737" endtime="20181211 09:16:51.091"></status>
+</kw>
+<status status="PASS" starttime="20181211 09:16:50.352" endtime="20181211 09:16:51.091"></status>
+</kw>
+<status status="PASS" starttime="20181211 09:16:48.162" endtime="20181211 09:16:51.091"></status>
+</kw>
+<status status="PASS" starttime="20181211 09:16:48.161" endtime="20181211 09:16:51.091" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20181206 16:42:27.125" endtime="20181206 16:42:32.881"></status>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181211 09:16:51.093" endtime="20181211 09:16:54.808"></status>
+</kw>
+<status status="PASS" starttime="20181211 09:16:40.561" endtime="20181211 09:16:54.808"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Test Admin Page">Test Admin Page</stat>
+<stat pass="1" fail="0" id="s1" name="Test Login Page">Test Login Page</stat>
 </suite>
 </statistics>
 <errors>
