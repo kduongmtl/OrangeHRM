@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181211 09:16:40.546">
-<suite id="s1" name="Test Login Page" source="C:\Automation\OrangeHRM\testcases\Test_Login_Page.robot">
-<kw name="Open Login Page" library="resource" type="setup">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181212 17:12:37.782">
+<suite id="s1" name="Test Admin Page" source="C:\Automation\OrangeHRM\testcases\Test_Admin_Page.robot">
+<kw name="Open User Management Page" library="resource" type="setup">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${LOGIN URL}</arg>
+<arg>${USER MANAGEMENT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181211 09:16:42.441" level="INFO">Opening browser 'Chrome' to base url 'http://opensource-demo.orangehrmlive.com'.</msg>
-<status status="PASS" starttime="20181211 09:16:42.441" endtime="20181211 09:16:48.160"></status>
+<msg timestamp="20181212 17:12:38.316" level="INFO">Opening browser 'Chrome' to base url 'http://opensource-demo.orangehrmlive.com//index.php/admin/viewSystemUsers'.</msg>
+<status status="PASS" starttime="20181212 17:12:38.315" endtime="20181212 17:12:42.448"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20181211 09:16:48.160" endtime="20181211 09:16:48.161"></status>
+<status status="PASS" starttime="20181212 17:12:42.448" endtime="20181212 17:12:42.449"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:42.440" endtime="20181211 09:16:48.161"></status>
-</kw>
-<test id="s1-t1" name="Case1">
-<kw name="Enter Email And Password">
-<arguments>
-<arg>Admin</arg>
-<arg>admin123</arg>
-</arguments>
 <kw name="Enter Username" library="resource">
 <arguments>
-<arg>${username}</arg>
+<arg>Admin</arg>
 </arguments>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -36,14 +28,14 @@
 <arg>txtUsername</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20181211 09:16:48.164" level="INFO">Typing text 'Admin' into text field 'txtUsername'.</msg>
-<status status="PASS" starttime="20181211 09:16:48.164" endtime="20181211 09:16:48.324"></status>
+<msg timestamp="20181212 17:12:42.450" level="INFO">Typing text 'Admin' into text field 'txtUsername'.</msg>
+<status status="PASS" starttime="20181212 17:12:42.449" endtime="20181212 17:12:45.599"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:48.163" endtime="20181211 09:16:48.324"></status>
+<status status="PASS" starttime="20181212 17:12:42.449" endtime="20181212 17:12:45.599"></status>
 </kw>
 <kw name="Enter Password" library="resource">
 <arguments>
-<arg>${password}</arg>
+<arg>admin123</arg>
 </arguments>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -51,10 +43,10 @@
 <arg>txtPassword</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20181211 09:16:48.325" level="INFO">Typing text 'admin123' into text field 'txtPassword'.</msg>
-<status status="PASS" starttime="20181211 09:16:48.325" endtime="20181211 09:16:48.454"></status>
+<msg timestamp="20181212 17:12:45.601" level="INFO">Typing text 'admin123' into text field 'txtPassword'.</msg>
+<status status="PASS" starttime="20181212 17:12:45.600" endtime="20181212 17:12:48.735"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:48.324" endtime="20181211 09:16:48.455"></status>
+<status status="PASS" starttime="20181212 17:12:45.599" endtime="20181212 17:12:48.735"></status>
 </kw>
 <kw name="Click Login" library="resource">
 <kw name="Click Element" library="Selenium2Library">
@@ -62,80 +54,159 @@
 <arguments>
 <arg>btnLogin</arg>
 </arguments>
-<msg timestamp="20181211 09:16:48.456" level="INFO">Clicking element 'btnLogin'.</msg>
-<status status="PASS" starttime="20181211 09:16:48.455" endtime="20181211 09:16:50.261"></status>
+<msg timestamp="20181212 17:12:48.736" level="INFO">Clicking element 'btnLogin'.</msg>
+<status status="PASS" starttime="20181212 17:12:48.736" endtime="20181212 17:12:52.319"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:48.455" endtime="20181211 09:16:50.261"></status>
+<status status="PASS" starttime="20181212 17:12:48.736" endtime="20181212 17:12:52.319"></status>
 </kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<arguments>
-<arg>//img[@src="/webres_5acde3dbd3adc6.90334155/themes/default/images/logo.png"]</arg>
-</arguments>
-<msg timestamp="20181211 09:16:50.301" level="INFO">Current page contains image '//img[@src="/webres_5acde3dbd3adc6.90334155/themes/default/images/logo.png"]'.</msg>
-<status status="PASS" starttime="20181211 09:16:50.262" endtime="20181211 09:16:50.302"></status>
+<status status="PASS" starttime="20181212 17:12:38.315" endtime="20181212 17:12:52.319"></status>
 </kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>//a[@id="welcome"]</arg>
-</arguments>
-<msg timestamp="20181211 09:16:50.325" level="INFO">Current page contains element '//a[@id="welcome"]'.</msg>
-<status status="PASS" starttime="20181211 09:16:50.302" endtime="20181211 09:16:50.325"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Dashboard</arg>
-</arguments>
-<msg timestamp="20181211 09:16:50.352" level="INFO">Current page contains text 'Dashboard'.</msg>
-<status status="PASS" starttime="20181211 09:16:50.325" endtime="20181211 09:16:50.352"></status>
-</kw>
-<kw name="Click Logout" library="resource">
+<test id="s1-t1" name="Add a new user">
+<kw name="Add User" library="resource">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>welcome</arg>
+<arg>btnAdd</arg>
 </arguments>
-<msg timestamp="20181211 09:16:50.353" level="INFO">Clicking element 'welcome'.</msg>
-<status status="PASS" starttime="20181211 09:16:50.353" endtime="20181211 09:16:50.466"></status>
+<msg timestamp="20181212 17:12:52.322" level="INFO">Clicking element 'btnAdd'.</msg>
+<status status="PASS" starttime="20181212 17:12:52.322" endtime="20181212 17:12:54.931"></status>
 </kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20181212 17:12:52.321" endtime="20181212 17:12:54.931"></status>
+</kw>
+<kw name="Select User Role" library="resource">
 <arguments>
-<arg>//a[@href="/index.php/auth/logout"]</arg>
+<arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20181211 09:16:50.467" endtime="20181211 09:16:50.736"></status>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>systemUser_userType</arg>
+<arg>${userType}</arg>
+</arguments>
+<msg timestamp="20181212 17:12:54.933" level="INFO">Selecting options from selection list 'systemUser_userType' by value 1.</msg>
+<status status="PASS" starttime="20181212 17:12:54.933" endtime="20181212 17:13:01.071"></status>
 </kw>
+<status status="PASS" starttime="20181212 17:12:54.932" endtime="20181212 17:13:01.071"></status>
+</kw>
+<kw name="Enter Employee Name" library="resource">
+<arguments>
+<arg>John Smith</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>systemUser_employeeName_empName</arg>
+<arg>${employeeName}</arg>
+</arguments>
+<msg timestamp="20181212 17:13:01.073" level="INFO">Typing text 'John Smith' into text field 'systemUser_employeeName_empName'.</msg>
+<status status="PASS" starttime="20181212 17:13:01.073" endtime="20181212 17:13:04.304"></status>
+</kw>
+<status status="PASS" starttime="20181212 17:13:01.072" endtime="20181212 17:13:04.304"></status>
+</kw>
+<kw name="Enter Desired Username" library="resource">
+<arguments>
+<arg>jsmith8</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>systemUser_userName</arg>
+<arg>${desiredUserName}</arg>
+</arguments>
+<msg timestamp="20181212 17:13:04.307" level="INFO">Typing text 'jsmith8' into text field 'systemUser_userName'.</msg>
+<status status="PASS" starttime="20181212 17:13:04.306" endtime="20181212 17:13:07.528"></status>
+</kw>
+<status status="PASS" starttime="20181212 17:13:04.305" endtime="20181212 17:13:07.528"></status>
+</kw>
+<kw name="Select Status" library="resource">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>systemUser_status</arg>
+<arg>${userStatus}</arg>
+</arguments>
+<msg timestamp="20181212 17:13:07.531" level="INFO">Selecting options from selection list 'systemUser_status' by value 1.</msg>
+<status status="PASS" starttime="20181212 17:13:07.530" endtime="20181212 17:13:12.619"></status>
+</kw>
+<status status="PASS" starttime="20181212 17:13:07.529" endtime="20181212 17:13:12.619"></status>
+</kw>
+<kw name="Enter Desired Password" library="resource">
+<arguments>
+<arg>flex&amp;CubeAnaTo5612</arg>
+<arg>flex&amp;CubeAnaTo5612</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>systemUser_password</arg>
+<arg>${desiredPassword}</arg>
+</arguments>
+<msg timestamp="20181212 17:13:12.621" level="INFO">Typing text 'flex&amp;CubeAnaTo5612' into text field 'systemUser_password'.</msg>
+<status status="PASS" starttime="20181212 17:13:12.621" endtime="20181212 17:13:15.887"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>systemUser_confirmPassword</arg>
+<arg>${confirmedPassword}</arg>
+</arguments>
+<msg timestamp="20181212 17:13:15.888" level="INFO">Typing text 'flex&amp;CubeAnaTo5612' into text field 'systemUser_confirmPassword'.</msg>
+<status status="PASS" starttime="20181212 17:13:15.887" endtime="20181212 17:13:19.141"></status>
+</kw>
+<status status="PASS" starttime="20181212 17:13:12.620" endtime="20181212 17:13:19.141"></status>
+</kw>
+<kw name="Click Save" library="resource">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//a[@href="/index.php/auth/logout"]</arg>
+<arg>btnSave</arg>
 </arguments>
-<msg timestamp="20181211 09:16:50.737" level="INFO">Clicking element '//a[@href="/index.php/auth/logout"]'.</msg>
-<status status="PASS" starttime="20181211 09:16:50.737" endtime="20181211 09:16:51.091"></status>
+<msg timestamp="20181212 17:13:19.143" level="INFO">Clicking element 'btnSave'.</msg>
+<status status="PASS" starttime="20181212 17:13:19.143" endtime="20181212 17:13:21.262"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:50.352" endtime="20181211 09:16:51.091"></status>
+<status status="PASS" starttime="20181212 17:13:19.142" endtime="20181212 17:13:21.262"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:48.162" endtime="20181211 09:16:51.091"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181212 17:13:22.542" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181212 17:13:21.263" endtime="20181212 17:13:22.542"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:48.161" endtime="20181211 09:16:51.091" critical="yes"></status>
+<status status="PASS" starttime="20181212 17:12:52.320" endtime="20181212 17:13:22.544" critical="yes"></status>
 </test>
-<kw name="Close Browser" library="Selenium2Library" type="teardown">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181211 09:16:51.093" endtime="20181211 09:16:54.808"></status>
+<test id="s1-t2" name="Add an exisitng user">
+<kw name="Add User" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>btnAdd</arg>
+</arguments>
+<msg timestamp="20181212 17:13:22.548" level="INFO">Clicking element 'btnAdd'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181212 17:13:24.860" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181212 17:13:23.568" endtime="20181212 17:13:24.861"></status>
 </kw>
-<status status="PASS" starttime="20181211 09:16:40.561" endtime="20181211 09:16:54.808"></status>
+<msg timestamp="20181212 17:13:24.866" level="FAIL">Element with locator 'btnAdd' not found.</msg>
+<status status="FAIL" starttime="20181212 17:13:22.548" endtime="20181212 17:13:24.866"></status>
+</kw>
+<status status="FAIL" starttime="20181212 17:13:22.547" endtime="20181212 17:13:24.866"></status>
+</kw>
+<status status="FAIL" starttime="20181212 17:13:22.546" endtime="20181212 17:13:24.867" critical="yes">Element with locator 'btnAdd' not found.</status>
+</test>
+<status status="FAIL" starttime="20181212 17:12:37.794" endtime="20181212 17:13:24.870"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test Login Page">Test Login Page</stat>
+<stat pass="1" fail="1" id="s1" name="Test Admin Page">Test Admin Page</stat>
 </suite>
 </statistics>
 <errors>

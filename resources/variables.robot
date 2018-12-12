@@ -2,7 +2,7 @@
 *** Variables ***
 ${SERVER}         opensource-demo.orangehrmlive.com
 ${BROWSER}        Chrome
-${DELAY}          0
+${DELAY}          1
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${CREATE ACCOUNT URL}      http://${SERVER}/
@@ -13,4 +13,4 @@ ${ERROR URL}      http://${SERVER}/error.html
 
 
 
-
+#pybot -t Add an exisitng user Test_Admin_Page.robot
